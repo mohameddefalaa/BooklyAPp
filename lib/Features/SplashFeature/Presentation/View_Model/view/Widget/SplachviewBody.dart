@@ -9,19 +9,20 @@ class SpalshViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Center(
           child: SvgPicture.asset(
             'assets/Logo.svg',
-            color: Colors.white,
+
             height: MediaQuery.of(context).size.height / 18,
           ),
         ),
         Gap(MediaQuery.of(context).size.height / 45),
         Text(
+          textAlign: TextAlign.center,
           "Unlock a World of Free Books.",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w400),
+          style: TextStyle(fontWeight: FontWeight.w400),
         ),
       ],
     );
