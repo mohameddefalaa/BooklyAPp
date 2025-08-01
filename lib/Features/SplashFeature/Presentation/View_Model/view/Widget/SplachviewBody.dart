@@ -1,5 +1,6 @@
 import 'package:bookly/Features/Home/Presentation/VIews/Home_view.dart';
 import 'package:bookly/Features/SplashFeature/Presentation/View_Model/view/Widget/slidingtext.dart';
+import 'package:bookly/core/assetesdata.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
@@ -48,7 +49,7 @@ class _SpalshViewBodyState extends State<SpalshViewBody>
       children: [
         Center(
           child: SvgPicture.asset(
-            'assets/Logo.svg',
+            Assetesdata.logo,
 
             height: MediaQuery.of(context).size.height / 18,
           ),
