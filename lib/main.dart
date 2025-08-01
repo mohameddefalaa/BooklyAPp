@@ -1,7 +1,6 @@
 import 'package:bookly/Features/SplashFeature/Presentation/View_Model/view/Splachview.dart';
 import 'package:bookly/core/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
