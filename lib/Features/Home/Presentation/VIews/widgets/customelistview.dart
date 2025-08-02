@@ -16,7 +16,7 @@ class CustomeListView extends StatelessWidget {
           return Stack(
             children: [
               BookItem(),
-              Positioned(bottom: 45, right: 10, child: Customeblurbutton()),
+              Positioned(bottom: 32, right: 10, child: Customeblurbutton()),
             ],
           );
         },

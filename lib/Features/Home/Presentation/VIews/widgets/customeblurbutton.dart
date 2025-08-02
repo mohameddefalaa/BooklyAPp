@@ -20,7 +20,7 @@ class Customeblurbutton extends StatelessWidget {
           onTap: () {},
           child: CircleAvatar(
             backgroundColor: Colors.white.withAlpha(12),
-            radius: 14,
+            radius: 16,
             child: SvgPicture.asset(Assetesdata.playicon),
           ),
         ),
