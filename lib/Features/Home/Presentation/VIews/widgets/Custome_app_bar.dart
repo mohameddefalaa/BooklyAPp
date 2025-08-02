@@ -15,6 +15,7 @@ class CustomeAppBar extends StatelessWidget {
         children: [
           SvgPicture.asset(Assetesdata.logo, height: 16.h, width: 75.w),
           GestureDetector(
+            onTap: () {},
             child: SvgPicture.asset(
               Assetesdata.searchicon,
               height: 25.h,

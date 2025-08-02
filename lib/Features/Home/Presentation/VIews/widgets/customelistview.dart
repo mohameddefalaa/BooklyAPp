@@ -1,4 +1,5 @@
 import 'package:bookly/Features/Home/Presentation/VIews/widgets/BookItem.dart';
+import 'package:bookly/Features/Home/Presentation/VIews/widgets/customeblurbutton.dart';
 import 'package:flutter/material.dart';
 
 class CustomeListView extends StatelessWidget {
@@ -7,12 +8,17 @@ class CustomeListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.25,
+      height: MediaQuery.of(context).size.height * 0.3,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: 5,
         itemBuilder: (context, index) {
-          return BookItem();
+          return Stack(
+            children: [
+              BookItem(),
+              Positioned(bottom: 45, right: 10, child: Customeblurbutton()),
+            ],
+          );
         },
       ),
     );
