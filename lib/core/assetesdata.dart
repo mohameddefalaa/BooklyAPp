@@ -3,4 +3,5 @@ class Assetesdata {
   static String searchicon = 'assets/icons/ic search.svg';
   static String book = 'assets/book.png';
   static String playicon = 'assets/icons/Path 27.svg';
+  static String star = 'assets/icons/star.svg';
 }

@@ -1,19 +1,23 @@
+import "package:bookly/core/colors.dart";
 import "package:flutter/material.dart";
 
 abstract class Textstyles {
-  static const titlemeduim = TextStyle(
+  static const textStyle18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w600,
   );
-  static const lablemedium = TextStyle(
+  static const textstyle14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    color: Color(0xffB8B6BD),
+    color: Appcolors.ksectextcolor,
   );
-  static const titlelarg = TextStyle(
-    fontSize: 14,
+  static const textStyle20 = TextStyle(
+    fontSize: 20,
     fontFamily: 'GTSectra',
     fontWeight: FontWeight.w400,
-    color: Color(0xffB8B6BD),
+  );
+  static const textStyle16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
   );
 }

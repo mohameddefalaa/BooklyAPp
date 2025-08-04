@@ -1,4 +1,5 @@
 import 'package:bookly/Features/Home/Presentation/VIews/widgets/Custome_app_bar.dart';
+import 'package:bookly/Features/Home/Presentation/VIews/widgets/bestseeleritem.dart';
 import 'package:bookly/Features/Home/Presentation/VIews/widgets/customelistview.dart';
 import 'package:bookly/core/textstyles.dart';
 import 'package:flutter/material.dart';
@@ -11,14 +12,16 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        padding: const EdgeInsets.only(left: 30.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const CustomeAppBar(),
             const CustomeListView(),
-            Gap(5),
-            Text('Best Seller', style: Textstyles.titlemeduim),
+            Gap(MediaQuery.of(context).size.height * 0.025),
+            Text('Best Seller', style: Textstyles.textStyle18),
+            Gap(MediaQuery.of(context).size.height * 0.025),
+            BestSellerItem(),
           ],
         ),
       ),
